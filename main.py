@@ -53,10 +53,8 @@ def alpha_filter(dict):
 
 def main():
     letter_dict = dict_value_sort(alpha_filter(character_counter()))
-    # letter_dict = dict_value_sort(letter_dict)
     print(f"{word_counter()} words found in the document")
     for i in letter_dict:
-        # if i.isalpha():
             print(f"The '{i}' character was found {letter_dict[i]} times")
 
 main()
